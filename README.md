@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# AI Support Triage Console
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern customer-support operations workspace that helps agents triage conversations, understand customer issues quickly, prioritize risk, and draft better responses with AI-assisted guidance.
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+This project was originally a basic chat application built on top of React Chat Engine. It has been redesigned into a standalone support operations product that demonstrates customer-service workflow thinking, triage logic, agent assistance, and human-in-the-loop decision making.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Customer support queue
+- Ticket search and filtering
+- Priority and status signals
+- Customer sentiment context
+- AI-generated issue summaries
+- AI-assisted recommended responses
+- Agent-controlled reply workflow
+- Open, Pending, and Resolved statuses
+- Local browser persistence
+- Queue-level metrics
+- Responsive support dashboard
+- No dependency on an external chat backend
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Support Workflow
 
-### `npm test`
+Each support ticket surfaces:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Customer issue
+- Ticket category
+- Priority
+- Sentiment
+- Current status
+- AI-generated summary
+- Recommended response guidance
 
-### `npm run build`
+The agent can review the AI suggestion, edit the final reply, and control the customer-facing action.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Human-in-the-Loop Design
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+AI assists with understanding and drafting, but does not automatically send customer-facing responses.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This keeps the agent responsible for:
 
-### `npm run eject`
+- final response quality
+- escalation decisions
+- workflow status
+- customer communication
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Tech Stack
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- React
+- Vite
+- Lucide React
+- CSS
+- Local Storage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Run Locally
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+git clone https://github.com/DhritiGada/chat-o-matic.git
+cd chat-o-matic
+npm install
+npm run dev
+```
 
-## Learn More
+## Production Build
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm run build
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The production output is generated in:
 
-### Code Splitting
+```text
+dist/
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Project Evolution
 
-### Analyzing the Bundle Size
+The original Chat-o-Matic implementation depended on React Chat Engine credentials and an external hosted chat backend.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` 
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The redesigned version removes that dependency and reframes the project as an AI-assisted support triage console focused on support operations, prioritization, structured issue understanding, and human-controlled resolution.
