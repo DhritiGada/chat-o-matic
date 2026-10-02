@@ -1,5 +1,9 @@
 # AI Support Triage Console
 
+## Live Demo
+
+[Open the AI Support Triage Console](https://chat-o-matic-xi.vercel.app/)
+
 A modern customer-support operations workspace that helps agents triage conversations, understand customer issues quickly, prioritize risk, and draft better responses with AI-assisted guidance.
 
 ## Overview
